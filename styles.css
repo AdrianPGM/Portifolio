@@ -1,0 +1,507 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-color: black;
+}
+
+
+main {
+    height: 100vh;
+    width: 100%;
+    background-color: #191919;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 10px;
+    background-color: #191919;
+    width: 100%;
+}
+
+img {
+    border-radius: 100%;
+    width: 650px;
+}
+
+
+
+
+.title {
+    color: white;
+    font-size: 35px;
+}
+
+.title span {
+    color: #f9004d;
+}
+
+li {
+    display: inline-block;
+    list-style: none;
+    color: white;
+    font-size: 20px;
+    font-weight: 200;
+    margin-right: 30px;
+    cursor: pointer;
+
+}
+
+.link-menu:hover {
+    color: #f9004d;
+}
+
+.link-menu {
+    text-decoration: none;
+    color: white;
+    transition: 0.5s;
+}
+
+.home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.my-name {
+    color: white;
+    margin-right: 20vw;
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.my-name span {
+    color: #f9004d;
+}
+
+.my-name h3 {
+    position: relative;
+}
+
+.my-name h3::before {
+    content: "";
+    color: white;
+    animation: word 30s infinite;
+}
+
+.my-name h3::after {
+    content: '';
+    position: absolute;
+    height: 100%;
+    border-left: 2px solid white;
+    right: -10px;
+    animation: handwriting .8s infinite, typing 30s steps(15) infinite;
+    width: calc(100% + 15px);
+    background-color: #191919;
+}
+
+@keyframes typing {
+
+    10%,
+    15%,
+    30%,
+    35%,
+    50%,
+    55%,
+    70%,
+    75%,
+    90%,
+    95% {
+        width: 0;
+    }
+
+    5%,
+    20%,
+    25%,
+    40%,
+    45%,
+    60%,
+    65%,
+    80%,
+    85% {
+        width: calc(100% + 15px);
+    }
+}
+
+@keyframes handwriting {
+    0% {
+        border-left: 2px solid #191919;
+    }
+}
+
+@keyframes word {
+
+    0%,
+    50% {
+        content: 'Programador Front-End';
+    }
+
+    51%,
+    100% {
+        content: 'Programador Front-End';
+    }
+}
+
+
+
+.about {
+    background-color: black;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 300px;
+    position: relative;
+}
+
+.about p {
+    color: white;
+    font-size: 15px;
+    margin-top: 20px;
+    font-weight: 300;
+}
+
+.about h1 {
+    color: white;
+    font-size: 50px;
+    font-weight: 700;
+    border-bottom: 3px solid white;
+    text-align: center;
+}
+
+
+.info {
+    width: 500px;
+}
+
+.info span {
+    font-weight: bold;
+}
+
+.title-about {
+    display: flex;
+    align-items: center;
+    padding-left: 5vw;
+}
+
+#projects {
+    background-color: #191919;
+    text-align: center;
+    padding: 20px;
+
+}
+
+.project {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 100px;
+    padding-left: 200px;
+}
+
+#projects h2 {
+    color: white;
+    font-size: 75px;
+}
+
+.img-projects {
+    border-radius: 0;
+    height: 100px;
+    width: auto;
+}
+
+.card {
+    background-color: black;
+    height: 365px;
+    width: 335px;
+    border-radius: 30px;
+    padding: 20px 35px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.card h4 {
+    color: white;
+    font-size: 24px;
+}
+
+.card p {
+    color: #e2b9c6;
+    font-size: 10px;
+    margin: 30px 0;
+}
+
+.card a {
+    background-color: #f9004d;
+    cursor: pointer;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 30px;
+    transition: 500ms;
+    text-decoration: none;
+    margin-right: 1px;
+}
+
+.card a:hover {
+    background-color: transparent;
+    border: 2px solid #f9004d;
+}
+
+footer {
+    background: black;
+    display: flex;
+    flex-direction: column;
+    padding-top: 80px;
+    padding-bottom: 100px;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+footer h5 {
+    color: white;
+    font-size: 25px;
+}
+
+footer p {
+    color: white;
+    font-size: 10;
+}
+
+.social img {
+    height: 30px;
+    width: auto;
+    border-radius: 50%;
+}
+
+.social {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.social a {
+    background-color: #f9004d;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    transition: 500ms;
+    text-decoration: none;
+}
+
+.social a:hover {
+    background-color: transparent;
+    border: 2px solid #f9004d;
+    transform: scale(1.3);
+}
+
+.icon-skils {
+    width: 50px;
+
+}
+
+aside {
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+aside h2 {
+    color: white;
+    font-size: 50px;
+    margin-top: 100px;
+}
+
+.hard-skills {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    display: flex;
+    gap: 50px;
+}
+
+.hard-skills :nth-child(2) {
+    transition-delay: 400ms;
+}
+
+.hard-skills :nth-child(3) {
+    transition-delay: 700ms;
+}
+
+.hard-skills :nth-child(4) {
+    transition-delay: 1000ms;
+}
+
+.hard-skills :nth-child(5) {
+    transition-delay: 1300ms;
+}
+
+.hard-skills :nth-child(6) {
+    transition-delay: 1600ms;
+}
+
+.hard-skills :nth-child(7) {
+    transition-delay: 1900ms;
+}
+
+.hard-skills :nth-child(8) {
+    transition-delay: 2200ms;
+}
+
+
+
+.hidden {
+    opacity: 0;
+    filter: blur(15px);
+    transform: translateX(-100%);
+    transition: all 2s;
+}
+
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+    transition: all 2s;
+}
+
+.formal-social {
+    margin-top: 100px;
+}
+
+#curriculo {
+    background-color: white;
+    border-radius: 25px;
+}
+
+.formal-social img {
+    width: 40px;
+
+}
+
+.home-social {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
+}
+
+
+#WeatherForecast,
+#convert,
+#starbucks {
+    margin: 5px 0 20px;
+}
+
+@media screen and (max-width: 1300px) {
+
+    .home-social {
+        display: flex;
+        gap: 50px;
+        align-items: center;
+        justify-content: center;
+        font-size: 10px;
+        margin-left: 85px;
+    }
+
+    .show {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .home {
+        display: block;
+    }
+
+    .about {
+        display: block;
+
+    }
+
+    #img-home,
+    #img-about {
+        width: 400px;
+        margin-left: 16px;
+    }
+
+    .info {
+        width: 400px;
+    }
+
+    
+    .about p {
+        font-size: 10px;
+        margin-left: 24px;
+        margin-top: 40px;
+    }
+
+    .hard-skills {
+        gap: 16px;
+    }
+
+    .hard-skills img {
+        width: 30px;
+    }
+
+
+    .project {
+        display: flex;
+        flex-direction: column;
+        margin-top: 100px;
+        padding-left: 0;
+        padding: 34px;
+    }
+
+    .my-name h1 {
+        margin-bottom: 30px;
+    }
+
+    .my-name h1,
+    .my-name h3 {
+        margin-left: 88px;
+    }
+
+    .my-name h3::after {
+        height: 50%;
+    }
+
+    header nav {
+        padding-left: 10px;
+        ul {
+            padding: 10px;
+        }
+       
+        li {
+            font-size: 14px;
+        }
+    }
+
+    #projects h2 {
+        font-size: 50px;
+    }
+
+    .title-about {
+        padding-left: 15vw;
+    }
+}
