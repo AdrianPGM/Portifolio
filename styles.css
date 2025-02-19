@@ -482,9 +482,7 @@ aside h2 {
         margin-left: 88px;
     }
 
-    .my-name h3::after {
-        height: 50%;
-    }
+    
 
     header nav {
         padding-left: 10px;
@@ -503,5 +501,11 @@ aside h2 {
 
     .title-about {
         padding-left: 15vw;
+    }
+}
+
+@media screen and (max-width: 650px) { 
+    .my-name h3::after {
+        height: 50%;
     }
 }
